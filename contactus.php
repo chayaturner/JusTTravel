@@ -1,6 +1,6 @@
 <?php include "header.php"; ?>
 
-    Contact Info: coming soon!
+<P class="content">Contact Info: coming soon!</P>
 
 <?php include "footer.php"; ?>
 

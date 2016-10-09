@@ -1,4 +1,42 @@
 P
 {
-font-size: 1.5em;
+    font-size: 1.5em;
+    color: #006666;
+    text-align: center;
+    font-family: Rockwell, Papyrus, fantasy, cursive;
 }
+
+#slogan{
+    font-family: Papyrus, fantasy;
+}
+
+#menu
+{
+    text-align:left;
+}
+
+.content
+{
+    font-family:Segoe UI, Rockwell, Monaco;
+    font-size:1em;
+    text-align:left;
+}
+
+ul
+{
+    font-family:Rockwell;
+}
+
+form
+{
+  font-family: Segoe UI;
+  font-size:1em;
+  color:#006666;
+}
+
+.loginheaders{
+    color: black;
+    font-weight:bold;
+    text-align: left;
+}
+

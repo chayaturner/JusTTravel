@@ -1,5 +1,5 @@
 
-<P>THE MENU</P>
+<P id="menu">MENU</P>
 <ul>
 <li><a href="page1.php">First Page</a>
 <li><a href="page2.php">Second Page</a>

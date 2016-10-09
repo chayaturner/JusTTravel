@@ -1,6 +1,8 @@
 <?php include "header.php"; ?>
 
-Planning trips can be hard, and sifting through the Internet for <br>
+<LINK rel="stylesheet" href="styles.css" type="text/css" />
+
+<P class="content">Planning trips can be hard, and sifting through the Internet for <br>
 travel information takes lots of time. Creating a cohesive travel plan out of <br>
 scattered information can be overwhelming, and hiring someone else to do it for you<br>
 can be costly. Our website makes the process simpler and more organized,<br>
@@ -20,6 +22,7 @@ Help other travelers by sharing your travel experiences. You can
 and <a href="">create</a> new itineraries.<br><br>
 
 Where are you off to next? <br>
+</P>
 
 <img src="images/worldmap.jpg">
 
