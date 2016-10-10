@@ -1,8 +1,8 @@
 
 <P id="menu">MENU</P>
 <ul>
-<li><a href="page1.php">First Page</a>
-<li><a href="page2.php">Second Page</a>
-<li><a href="page3.php">Third Page</a>
-<li><a href="page4.php">Fourth Page</a>
+<li><a href="index.php">Home</a>
+<li><a href="itin.php">My Itineraries</a>
+<li><a href="locations.php">Locations</a>
+<li><a href="about.php">About Us</a>
 </ul>
