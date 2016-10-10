@@ -19,8 +19,28 @@ a{
     font-family: Rockwell, Papyrus, fantasy, cursive;
 }
 
+.image{
+    position: relative;
+    width: 100%;
+}
+
+#logo{
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
 #slogan{
     font-family: Papyrus, fantasy;
+    position: absolute; 
+    top: 150px; 
+    width: 100%; 
+    font-size: 2.5em;
+}
+nav{
+    position: absolute; 
+    top: 280px; 
+    width: 100%; 
 }
 nav ul{
     text-align: center;
@@ -33,7 +53,7 @@ nav ul li {
 
 nav ul li a:link, nav ul li a:visited {
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: bold;
     background: #006666;
     padding: 3px 0 3px 0px;
@@ -44,7 +64,7 @@ nav ul li a:link, nav ul li a:visited {
 #menu_list a{
     display: inline-block;
     text-decoration: none;
-    width: 200px;
+    width: 175px;
     margin-bottom: 15px;
 }
 
@@ -77,4 +97,7 @@ form
     font-weight:bold;
     text-align: left;
 }
+
+
+
 
