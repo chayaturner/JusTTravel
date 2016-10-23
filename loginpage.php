@@ -8,8 +8,8 @@
     </head>
     <body>
         <img src="images/logogreen.jpg" alt="JusTTravel" height="100" width="100"><br>
-            <form action="index.php" method="post">
-                <p class="loginheaders">Sign up to our website! </p>
+            <form action="responsepage.php" method="post">
+                <!--<p class="loginheaders">Sign up to our website! </p>
                 Name: <input type="text" name="name"/><br>
                 Email: <input type="text" name="email"/><br>
                 Username: <input type ="text" name="username"/><br>
@@ -33,6 +33,8 @@
                     <br><br>
                     
                     <p class="loginheaders">Already have an account? </p>
+                -->
+                <p class="loginheaders">Login</p>
                      Username: <input type="text" name="username"/><br>
                      Password: <input type="password" name="password" /><br><br>
                     <input type="submit" name="login_button" value="Login">
