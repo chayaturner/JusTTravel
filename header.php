@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 
 <HTML>
     <HEAD>
@@ -10,7 +10,7 @@
             <IMG src="images/beach1.jpg" alt="Beach" width="100%" height="350">
             <IMG id ="logo" src="images/logogreen.jpg" alt="JusTTravel" width="150" height="150">
             <?php
-            if ($_SESSION['LoggedIn']== true) {
+            if ($_SESSION['LoggedIn']==TRUE) {
                 echo "<p id='hello'>Hello ".$_COOKIE['username']."</p>";
             }
             else{

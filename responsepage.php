@@ -13,16 +13,16 @@
   
         $loginArray = array('username'=> $_POST['username'], 'password'=> $_POST['password']);
         
-        //check if user entered vaild login info
+        //check if user entered valid login info
     if(in_array($loginArray, $users)){
         //cookie that stores the username who logged in
-        setcookie('username', $loginArray['username'], time()+4800);
+        setcookie('username', $loginArray['username']);
         //set the session variable to true
-        $_SESSION['LoggedIn']= true;
+        $_SESSION['LoggedIn']= TRUE;
         echo "<a href='index.php'> <br> Go! </a>";
     } else {
         //set the session varibale to false
-        $_SESSION['LoggedIn'] = false;
+        $_SESSION['LoggedIn']= FALSE;
       echo '<br>Incorrect username or password. 
            Please <a href="loginpage.php"> try again. </a>';
     }
