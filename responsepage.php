@@ -34,10 +34,11 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $dbquery = sprintf("select username, password from user where email='%s' and password='%s'", $username, $password);
+        $dbquery = sprintf("select username from user where username='%s' and password='%s'", $username, $password);
         $dbresult = mysql_query($dbquery, $dbhandle);
+       $num_rows = mysql_num_rows($dbresult);
 
-        if ($dbresult) {
+        if ($num_rows==1) {
             //cookie that stores the username who logged in
             setcookie('username', $username);
             //set the session variable to true
