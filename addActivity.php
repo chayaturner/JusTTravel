@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include "header.php"; ?>
 <html>
     <header>
         <meta charset="UTF-8">
@@ -19,6 +20,8 @@
               
     </body>
 </html>
+
+<?php include "footer.php"; ?>
 
 
      

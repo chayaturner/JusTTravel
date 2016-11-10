@@ -1,5 +1,5 @@
 <!DOCTYPE hmtl>
-<!-- <?php include header.php ?> -->
+<?php include 'header.php'; ?>
 <html>
     <header>
         <meta charset="UTF-8">
@@ -10,14 +10,14 @@
        <form action="searchResponse.php" method="post">
             <!-- Search existing activities button -->
             
-             <!-- Fetching from a database: http://stackoverflow.com/questions/10009464/fetching-data-from-mysql-database-to-html-dropdown-list-->
-             Search existing activities by location, activity, or both!<br><br>
+            <!-- Fetching from a database: http://stackoverflow.com/questions/10009464/fetching-data-from-mysql-database-to-html-dropdown-list-->
+            Search existing activities by location, activity, or both!<br><br>
            
-            Location: <select name="locations">
+            Location: <select name="location">
                         <option value="None" SELECTED> None
                         <!-- input values from database -->
                     </select> 
-            Activity: <select name="activities">
+            Activity: <select name="activity">
                         <option value="None" SELECTED> None
                         <!--input values from database-->
                     </select>
@@ -33,4 +33,4 @@
     </body>
 </html>
 
-<!-- <?php include footer.php ?> -->
+<?php include 'footer.php'; ?>

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<?php include "header.php"; ?>
+
 <html>  
     <body>
 
@@ -55,6 +58,7 @@
 
 </html>
 
+<?php include "footer.php"; ?>
 
 
 

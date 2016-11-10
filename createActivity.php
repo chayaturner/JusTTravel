@@ -1,5 +1,5 @@
 <!DOCTYPE hmtl>
-<!-- <?php include header.php ?> -->
+<?php include "header.php"; ?>
 <html>
     <header>
         <meta charset="UTF-8">
@@ -11,16 +11,20 @@
             <!-- Allow users to enter info about new Activity -->
             <!-- all data should be entered into database -->
             
-            Create new Activity!<br><br>
+            CREATE NEW ACTIVITY!<br><br>
            
-            Location: <select name="locations">
+            Location: <select name="location">
                         <option value="None" SELECTED> None
                         <!-- input values from database -->
-            </select> <br><br>
-            Activity Type: <select name="activities">
+            </select> 
+            Or new Location: <input type="TEXT" name ="newLocation" id="newLocation" size="30"<br><br>
+            <br>
+            Activity: <select name="activity">
                         <option value="None" SELECTED> None
                         <!--input values from database-->
-            </select> <br><br>
+            </select> 
+            Or new Activity: <input type="TEXT" name ="newActivity" id="newActivity" size="30"<br><br>
+            <br><br>
             
             Company info: <br>
             Name: <input type ="TEXT" name="coName" id="coName" size="30"><br>
@@ -33,6 +37,6 @@
     </body>
 </html>
 
-<!-- <?php include footer.php ?> -->
+<?php include "footer.php"; ?>
 
 
