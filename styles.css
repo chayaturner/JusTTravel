@@ -104,6 +104,27 @@ form
     font-weight:bold;
     text-align: left;
 }
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-top: thick solid #006666
+}
+.footer p{
+    font-size:.7em;
+    display:inline;
+    position:absolute;
+}
+#right{
+    right:5;
+}
+.footer h5{
+    font-size: .7em;
+    position:absolute;
+    right:5;
+    margin-bottom: 5em; 
+    
+}
 
 
 

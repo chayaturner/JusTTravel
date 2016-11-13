@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 
-<?php include "header.php"; ?>
 
 <html>  
     <body>
 
         <?php
         require_once "dbConnect.php";
-        include 'loginpage.php';
         session_start();
 
         /*
@@ -33,7 +31,6 @@
           }
          */
 
-
         $username = $_POST['username'];
         $password = $_POST['password'];
 
@@ -58,7 +55,6 @@
 
 </html>
 
-<?php include "footer.php"; ?>
 
 
 
