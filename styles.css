@@ -114,6 +114,20 @@ form
     right:5;
     margin-bottom: 5em; 
 }
+
+input:required:invalid, input:focus:invalid {
+    background-image: url(/images/invalid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-color:red;
+  }
+  input:required:valid {
+    background-image: url(/images/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-color:green;
+  }
+
 textarea {
     height: 100px;
     width: 400px;
