@@ -46,7 +46,7 @@ a{
 }
 nav{
     position: absolute; 
-    top: 280px; 
+    top: 240px; 
     width: 100%; 
 }
 nav ul{
@@ -71,8 +71,9 @@ nav ul li a:link, nav ul li a:visited {
 #menu_list a{
     display: inline-block;
     text-decoration: none;
-    width: 175px;
+    width: 150px;
     margin-bottom: 15px;
+    font-size: 1em;
 }
 
 #menu_list a:hover{
@@ -104,28 +105,18 @@ form
     font-weight:bold;
     text-align: left;
 }
-.footer{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    border-top: thick solid #006666
-}
 .footer p{
-    font-size:.7em;
+    font-size:.6em;
     display:inline;
-    position:absolute;
-}
-#right{
-    right:5;
 }
 .footer h5{
     font-size: .7em;
-    position:absolute;
     right:5;
     margin-bottom: 5em; 
-    
 }
-
-
-
-
+textarea {
+    height: 100px;
+    width: 400px;
+    resize:both;
+        ; /* Remove this if you want the user to resize the textarea */
+}

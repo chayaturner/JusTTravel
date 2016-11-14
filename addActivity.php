@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <?php include "header.php"; ?>
-<html>
-    <header>
-        <meta charset="UTF-8">
-        <title>New Activity</title>
-        <LINK rel="stylesheet" href="styles.css" type="text/css" />
-    </header>
-    <body> 
         Would you like to create a new activity, or search existing activities?<br>
        <!-- Create new activity button-->
        <form action="createActivity.php" method="post">
@@ -17,10 +10,7 @@
             <input type="submit" name="search_button" value="Search"/>
        </form>
        
-              
-    </body>
-</html>
-
+         
 <?php include "footer.php"; ?>
 
 

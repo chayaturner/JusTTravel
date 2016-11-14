@@ -2,7 +2,7 @@
 
 <HTML>
     <HEAD>
-        <LINK rel="stylesheet" href="styles.css?d=<?php echo time(); ?>" type="text/css" />
+        <LINK rel="stylesheet" href="styles.css" type="text/css" />
     </HEAD>
     <BODY>
 
