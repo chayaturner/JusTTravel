@@ -1,21 +1,25 @@
-<!DOCTYPE html>
 
+<?php include "header.php"; ?>
+<div class="center">
+    <img src="images/logogreen.jpg" alt="JusTTravel" height="100" width="100"><br>
+    <form action="responsepage.php" method="post">
+        <p>Login</p>
+        Username: <input type="text" name="username"/><br>
+        Password: <input type="password" name="password" /><br><br>
+        <input type="submit" name="login_button" value="Login"><br>
+    </form> 
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Login Page</title>
-        <LINK rel="stylesheet" href="styles.css" type="text/css" />
-    </head>
-    <body>
-        <img src="images/logogreen.jpg" alt="JusTTravel" height="100" width="100"><br>
-            <form action="responsepage.php" method="post">
-                <p class="loginheaders">Login</p>
-                     Username: <input type="text" name="username"/><br>
-                     Password: <input type="password" name="password" /><br><br>
-                    <input type="submit" name="login_button" value="Login">
-            </form>  
-    </body>
-</html>
+    <?php
+    if (isset($_SESSION['Login.Error'])) {
+        echo "<p>" . $_SESSION['Login.Error'] . "</p>";
+        unset($_SESSION['Login.Error']);
+    }
+    ?>
 
+    <a href="signup.php">Sign Up to create account!</a>
+</div>
+
+<HR />
+</BODY>
+</HTML>
 

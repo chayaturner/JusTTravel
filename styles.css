@@ -36,6 +36,13 @@ a{
     right: 10px;
     color: white;
 }
+#logout{
+    position: absolute;
+    top:35px;
+    right: 10px;
+    color: white; 
+}
+
 
 #slogan{
     font-family: Papyrus, fantasy;
@@ -100,11 +107,11 @@ form
     color:#006666;
 }
 
-.loginheaders{
-    color: black;
-    font-weight:bold;
-    text-align: left;
+.center{
+    text-align: center;
 }
+
+
 .footer p{
     font-size:.6em;
     display:inline;
@@ -120,17 +127,17 @@ input:required:invalid, input:focus:invalid {
     background-position: right top;
     background-repeat: no-repeat;
     border-color:red;
-  }
-  input:required:valid {
+}
+input:required:valid {
     background-image: url(/images/valid.png);
     background-position: right top;
     background-repeat: no-repeat;
     border-color:green;
-  }
+}
 
 textarea {
     height: 100px;
     width: 400px;
     resize:both;
-        ; /* Remove this if you want the user to resize the textarea */
+    ; /* Remove this if you want the user to resize the textarea */
 }

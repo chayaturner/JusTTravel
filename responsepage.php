@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+<?php include "header.php"; ?>
 
 <html>  
     <body>
@@ -36,19 +37,19 @@
 
         $dbquery = sprintf("select username from user where username='%s' and password='%s'", $username, $password);
         $dbresult = mysql_query($dbquery, $dbhandle);
-       $num_rows = mysql_num_rows($dbresult);
+        $num_rows = mysql_num_rows($dbresult);
 
-        if ($num_rows==1) {
+        if ($num_rows == 1) {
             //cookie that stores the username who logged in
             setcookie('username', $username);
             //set the session variable to true
             $_SESSION['LoggedIn'] = TRUE;
-            echo "<a href = 'index.php'> <br> Go!</a>";
+            header('Location: menu_my_act.php');
         } else {
             //set the session varibale to false
             $_SESSION['LoggedIn'] = FALSE;
-            echo '<br>Incorrect username or password. 
-           Please <a href="loginpage.php"> try again. </a>';
+            $_SESSION["Login.Error"] = 'Invalid credentials';
+            header('Location: loginpage.php');
         }
         ?>    
     </body>

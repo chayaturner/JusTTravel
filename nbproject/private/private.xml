@@ -5,16 +5,11 @@
         <group>
             <file>file:/C:/xampp/htdocs/JusTTravel/loginpage.php</file>
             <file>file:/C:/xampp/htdocs/JusTTravel/SignUp.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/searchResponse.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/menu_activities.php</file>
+            <file>file:/C:/xampp/htdocs/JusTTravel/logout.php</file>
             <file>file:/C:/xampp/htdocs/JusTTravel/header.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/menu_my_act.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/footer.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/menu.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/aboutUs.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/addActivity.php</file>
-            <file>file:/C:/xampp/htdocs/JusTTravel/responsepage.php</file>
+            <file>file:/C:/xampp/htdocs/JusTTravel/index.php</file>
             <file>file:/C:/xampp/htdocs/JusTTravel/styles.css</file>
+            <file>file:/C:/xampp/htdocs/JusTTravel/responsepage.php</file>
         </group>
     </open-files>
 </project-private>
