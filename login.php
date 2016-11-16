@@ -2,7 +2,7 @@
 <?php include "header.php"; ?>
 <div class="center">
     <img src="images/logogreen.jpg" alt="JusTTravel" height="100" width="100"><br>
-    <form action="responsepage.php" method="post">
+    <form action="loginResponse.php" method="post">
         <p>Login</p>
         Username: <input type="text" name="username"/><br>
         Password: <input type="password" name="password" /><br><br>
@@ -16,7 +16,7 @@
     }
     ?>
 
-    <a href="signup.php">Sign Up to create account!</a>
+    <a href="signUp.php">Sign Up to create account!</a>
 </div>
 
 <HR />

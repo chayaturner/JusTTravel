@@ -17,9 +17,9 @@ JusTTravel - “Plan less. Travel more.”
 <!-- will create .php files for submitting, searching, and creating-->
 
 Help other travelers by sharing your travel experiences. You can 
-<a href ="menu_my_act.php">save</a> activities to your account, <br> 
-<a href="menu_locations.php">search</a> through other travelers’ activities, 
-and <a href="menu_activities.php">create</a> new activities.<br><br>
+<a href ="myActivities.php">save</a> activities to your account, <br> 
+<a href="searchActivities.php">search</a> through other travelers’ activities, 
+and <a href="addActivity.php">create</a> new activities.<br><br>
 
 Where are you off to next? <br>
 </P>

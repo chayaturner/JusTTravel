@@ -1,7 +1,8 @@
-<?php
-include "header.php";
-//Display search results from the database
-echo 'Search results coming soon!';
+<?php include "header.php"; 
 
-include "footer.php";
-?>
+  echo 'Coming soon!!';
+  
+  //the activities displayed links to activity page
+
+ include "footer.php"; ?>
+

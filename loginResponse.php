@@ -44,17 +44,18 @@
             setcookie('username', $username);
             //set the session variable to true
             $_SESSION['LoggedIn'] = TRUE;
-            header('Location: menu_my_act.php');
+            header('Location: myActivities.php');
         } else {
             //set the session varibale to false
             $_SESSION['LoggedIn'] = FALSE;
             $_SESSION["Login.Error"] = 'Invalid credentials';
-            header('Location: loginpage.php');
+            header('Location: login.php');
         }
         ?>    
     </body>
 
 </html>
+
 
 
 

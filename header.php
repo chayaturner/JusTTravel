@@ -11,11 +11,11 @@
             <IMG id ="logo" src="images/logogreen.jpg" alt="JusTTravel" width="150" height="150">
             <?php
             if ((isset($_SESSION['LoggedIn'])) && ($_SESSION['LoggedIn'] == TRUE)) {
-                echo "<a href = 'menu_my_act.php' id='hello'>Hello " . $_COOKIE['username'] . "</a>";
+                echo "<a href = 'myActivities.php' id='hello'>Hello " . $_COOKIE['username'] . "</a>";
                 echo "<a href ='logout.php' id='logout'>Log Out</a>";
             } else {
-                echo "<a href = 'loginpage.php' id ='hello'> <br> Log In</a>";
-                //echo "<meta http-equiv='refresh' content='5;loginpage.php' />";
+                echo "<a href = 'login.php' id ='hello'> <br> Log In</a>";
+                //echo "<meta http-equiv='refresh' content='5;login.php' />";
             }
             ?>
             <P id="slogan"> "Plan less. Travel more." </P>

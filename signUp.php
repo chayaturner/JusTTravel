@@ -27,7 +27,7 @@
         <input type="submit" name="signup_button" value="Sign Up"/>
         <br><br>
 
-        <a href= "loginpage.php">Already have an account? </a>
+        <a href= "login.php">Already have an account? </a>
 
         <!--repsonse page to submit data and login-->
     </form>  
