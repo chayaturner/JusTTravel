@@ -2,10 +2,9 @@
 
 <?php include "header.php"; ?>
 
-
         <?php
         require_once "dbConnect.php";
-        session_start();
+ 
 
         /*
           $users = array();

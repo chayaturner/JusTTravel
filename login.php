@@ -1,5 +1,6 @@
 
 <?php include "header.php"; ?>
+
 <div class="center">
     <img src="images/logogreen.jpg" alt="JusTTravel" height="100" width="100"><br>
     <form action="loginResponse.php" method="post">
