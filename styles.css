@@ -141,3 +141,10 @@ textarea {
     resize:both;
     ; /* Remove this if you want the user to resize the textarea */
 }
+
+.list{
+    background-color:#FFFFCC;
+    border-width:  0px 0px 6px 0px;
+    border-style: solid;
+    border-color:  white;
+}

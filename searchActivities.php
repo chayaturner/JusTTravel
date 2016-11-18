@@ -17,12 +17,12 @@ require_once "dbConnect.php";
             Search existing activities by location, activity, or both!<br><br>
 
             <?php
-            $dbquery = 'select statename from location';
+            $dbquery = 'select statename, locationid from location';
             $dbresult = mysql_query($dbquery, $dbhandle);
-            echo 'Location: <select name = "locations">';
+            echo 'Location: <select name = "location">';
             echo '<option value="None" SELECTED> None</option>';
             while ($dbrow = mysql_fetch_assoc($dbresult)) {
-                echo sprintf("<option value=%s>%s</option>", $dbrow['statecode'], $dbrow['statename']);
+                echo sprintf("<option value=%s>%s</option>", $dbrow['locationid'], $dbrow['statename']);
             }
             echo '</select><br>';
 
@@ -37,11 +37,9 @@ require_once "dbConnect.php";
             echo '</select><br>';
             ?>
 
-            <input type = "submit" name = "search_button" value = "Search"/>
-
-
+            <input type = "submit" name = "search" value = "Search"/>
             <br><br>
-            Or <input type="submit" name="search_all_button" value="View All Activities"/>
+            Or <input type="submit" name="search" value="View All Activities"/>
         </form>
 
         <!-- search all activities -->
@@ -51,14 +49,3 @@ require_once "dbConnect.php";
 </html>
 
 <?php include 'footer.php'; ?>
-
-
-<?php
-$dbquery = 'select statename from location';
-$dbresult = mysql_query($dbquery, $dbhandle);
-echo 'Location: <select name = "locations">';
-while ($dbrow = mysql_fetch_assoc($dbresult)) {
-    echo sprintf("<option value=%s>%s</option>", $dbrow['statecode'], $dbrow['statename']);
-}
-echo '</select><br>';
-?>
