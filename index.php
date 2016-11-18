@@ -22,9 +22,11 @@ Help other travelers by sharing your travel experiences. You can
 and <a href="addActivity.php">create</a> new activities.<br><br>
 
 Where are you off to next? <br>
-</P>
 
-<img src="images/worldmap.jpg">
+<?php include "slideshow.php"; ?>
+<br><br><br><br><br><br><br><br><br><br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</P>
 
 <?php include "footer.php"; ?>
 
