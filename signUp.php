@@ -75,7 +75,7 @@ if (isset($_SESSION['Login.Error'])) {
     //crete query and rules to validate that user and email dont exist
     $dbquery = 'select statename, locationid from location';
     $dbresult = mysql_query($dbquery, $dbhandle);
-    echo ' <label> Label:</label> <select name = "locations" id="locations">';
+    echo ' <label> Location:</label> <select name = "locations" id="locations">';
     while ($dbrow = mysql_fetch_assoc($dbresult)) {
         echo sprintf("<option value=%f>%s</option>", $dbrow['locationid'], $dbrow['statename']);
     }
@@ -89,7 +89,7 @@ if (isset($_SESSION['Login.Error'])) {
         <input type="RADIO" name="travelAmount" value="Average" checked="checked"> An average amount<br>
         <input type="RADIO" name="travelAmount" value="Not Often"> I need to get out more often<br>
     </div>
-    <input type="submit" value="Create Account" id="create"/> 
+    <input type="submit" value="Create Account" id="button"/> 
 </form>
 
 <a href= "login.php">Already have an account? </a>

@@ -1,5 +1,4 @@
 <?php
-
 include "header.php";
 require_once "dbConnect.php";
 
@@ -30,7 +29,6 @@ while ($dbrow = mysql_fetch_assoc($dbresult)) {
     //need to carry data about activity into actiicty page to display full activity 
     //add more detail to display list?
 }
-
 include "footer.php";
 ?>
 

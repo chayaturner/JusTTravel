@@ -140,7 +140,7 @@ input:required:valid {
     border-color:green;
 }
 
-textarea {
+#emailComment {
     height: 100px;
     width: 400px;
     resize:both;
@@ -220,11 +220,11 @@ textarea {
     font-size: 80.5%;
 }
 
-#travel {
+#travel{
     text-align:left;
 }
 
-#create{
+#button{
     background-color:  #006666;
     color: white;
 }
@@ -232,3 +232,37 @@ textarea {
 .error{
     color: red;
 }
+
+#addActivity label {
+    float: left;
+    width: 13em;
+    text-align: left;
+    margin-left: 1em;
+}
+#addActivity label.nofloat {
+    float: none;
+}
+#addActivity input, #locations, #activityType, #rating, textarea{
+    width: 13em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+#addActivity span {
+    color: red;
+}
+
+#addActivity label.error {
+    float: none;
+    color: red;
+    font-size: 80.5%;
+}
+
+#rating{
+    width:3em;
+}
+
+.hide{
+    display: none;
+}
+
+
