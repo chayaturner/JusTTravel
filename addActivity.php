@@ -7,6 +7,7 @@ require_once "dbConnect.php";
 <form action="addConfirmation.php" method="post">
     <!-- Allow users to enter info about new Activity -->
     <!-- all data should be entered into database -->
+   <!--update form and add validation  and add inserts -->
 
     CREATE NEW ACTIVITY!<br><br>
 

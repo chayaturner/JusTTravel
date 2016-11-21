@@ -2,20 +2,20 @@
 <?php include "header.php"; ?>
 
 <div class="center">
-    <img src="images/logogreen.jpg" alt="JusTTravel" height="100" width="100"><br>
+    <p>Login</p>
+    <?php
+    if (isset($_SESSION['Login.Error'])) {
+        echo '<h5 class="error">' . $_SESSION['Login.Error'] . '</h5>';
+        unset($_SESSION['Login.Error']);
+    }
+    ?>
     <form action="loginResponse.php" method="post">
-        <p>Login</p>
-        Username: <input type="text" name="username"/><br>
+
+        Email: <input type="text" name="email"/><br>
         Password: <input type="password" name="password" /><br><br>
         <input type="submit" name="login_button" value="Login"><br>
     </form> 
 
-    <?php
-    if (isset($_SESSION['Login.Error'])) {
-        echo "<p>" . $_SESSION['Login.Error'] . "</p>";
-        unset($_SESSION['Login.Error']);
-    }
-    ?>
 
     <a href="signUp.php">Sign Up to create account!</a>
 </div>

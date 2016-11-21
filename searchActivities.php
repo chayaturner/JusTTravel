@@ -22,7 +22,7 @@ require_once "dbConnect.php";
             echo 'Location: <select name = "location">';
             echo '<option value="None" SELECTED> None</option>';
             while ($dbrow = mysql_fetch_assoc($dbresult)) {
-                echo sprintf("<option value=%s>%s</option>", $dbrow['locationid'], $dbrow['statename']);
+                echo sprintf("<option value=%f>%s</option>", $dbrow['locationid'], $dbrow['statename']);
             }
             echo '</select><br>';
 

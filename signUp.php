@@ -1,41 +1,98 @@
-<?php include "header.php";
+<?php
+include "header.php";
 require_once "dbConnect.php";
 ?>
 
-<div class="center">
-    <img src="images/logogreen.jpg" alt="JusTTravel" height="100" width="100"><br>
-    <form action="#" method="post">
-        <p class="loginheaders">Sign up to our website! </p>
-        Name: <input type="text" name="name"/><br>
-        Email: <input type="text" name="email"/><br>
-        Username: <input type ="text" name="username"/><br>
-        Password: <input type="password" name="password" size="10"/><br>
 
-        <!--change options to states database-->
+<script>
+    $(function () {
 
-        <?php
-        $dbquery = 'select statename from location';
-        $dbresult = mysql_query($dbquery, $dbhandle);
-        echo 'Location: <select name = "locations">';
-        while ($dbrow = mysql_fetch_assoc($dbresult)) {
-            echo sprintf("<option value=%s>%s</option>", $dbrow['statecode'], $dbrow['statename']);
-        }
-        echo '</select><br>';
-        ?>
+        $.validator.addMethod('notused', function (value) {
+            //Your Validation Here
 
-        How often do you travel? <br><input type="RADIO" name="travelAmount" value="Often"> Very often
-        <input type="RADIO" name="travelAmount" value="Average"> An average amount
-        <input type="RADIO" name="travelAmount" value="Not Often"> I need to get out more often
-        <br><br>
-        <input type="submit" name="signup_button" value="Sign Up"/>
-        <br><br>
+            return isValid; // return bool here if valid or not.
+        }, 'Your error message!');
 
-        <a href= "login''.php">Already have an account? </a>
+        $("#createAccount").validate({
+            rules: {
+                firstName: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 20
 
-        <!--response page to submit data and login-->
-    </form>  
-</div>
-<HR />
-</BODY>
-</HTML>
+                },
+                lastName: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 20
+
+                },
+                userName: {
+                    required: true,
+                    minlength: 4,
+                    maxlength: 15
+                },
+                email: {
+                    required: true,
+                    email: true,
+                    notused: true
+                },
+                password: {
+                    required: true
+                },
+                confirm: {
+                    required: true,
+                    equalTo: "#password"
+                }
+            }
+
+        });
+    });
+</script>
+
+<?php
+if (isset($_SESSION['Login.Error'])) {
+    echo '<h5 class="error">' . $_SESSION['Login.Error'] . '</h5>';
+    unset($_SESSION['Login.Error']);
+}
+?>
+
+
+<p class="loginheaders">Sign up to our Website!</p>
+<form method="post" action="signUpResponse.php" id="createAccount">
+    <label> First Name: </label>
+    <input type="text" id="firstName" name="firstName" placeholder="First Name"><br>
+    <label>Last Name:</label>
+    <input type="text" name="lastName" placeholder="Last Name"><br>
+    <label> Email:</label>
+    <input type="text" name="email" id="email" placeholder="someone@example.org"><br/>
+    <label>Password: </label>
+    <input type="password" id="password" name="password" placeholder="Password"><br/>
+    <label>Confirm Password: </label>
+    <input type="password" name="confirm" placeholder="Confirm Password"><br/>
+
+    <?php
+    //crete query and rules to validate that user and email dont exist
+    $dbquery = 'select statename, locationid from location';
+    $dbresult = mysql_query($dbquery, $dbhandle);
+    echo ' <label> Label:</label> <select name = "locations" id="locations">';
+    while ($dbrow = mysql_fetch_assoc($dbresult)) {
+        echo sprintf("<option value=%f>%s</option>", $dbrow['locationid'], $dbrow['statename']);
+    }
+    echo '</select><br>';
+    ?>
+
+    <br>
+    <label> How often do you travel?</label> <br>
+    <div class="travel">
+        <input type="RADIO" name="travelAmount"value="Often"> Very often <br>
+        <input type="RADIO" name="travelAmount" value="Average" checked="checked"> An average amount<br>
+        <input type="RADIO" name="travelAmount" value="Not Often"> I need to get out more often<br>
+    </div>
+    <input type="submit" value="Create Account" id="create"/> 
+</form>
+
+<a href= "login.php">Already have an account? </a>
+
+<?php include 'footer.php'; ?>
 

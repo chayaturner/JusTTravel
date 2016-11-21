@@ -28,23 +28,24 @@ session_start();
   }
  */
 
-$username = $_POST['username'];
+$email = $_POST['email'];
 $password = $_POST['password'];
 
-$dbquery = sprintf("select username from user where username='%s' and password='%s'", $username, $password);
+$dbquery = sprintf("select email, firstName from user where email='%s' and password='%s'", $email, $password);
 $dbresult = mysql_query($dbquery, $dbhandle);
 $num_rows = mysql_num_rows($dbresult);
+$row = mysql_fetch_row($dbresult);
 
 if ($num_rows == 1) {
     //cookie that stores the username who logged in
-    setcookie('username', $username);
+    setcookie('user', $row[1]);
     //set the session variable to true
     $_SESSION['LoggedIn'] = TRUE;
     header('Location: myActivities.php');
 } else {
     //set the session varibale to false
     $_SESSION['LoggedIn'] = FALSE;
-    $_SESSION["Login.Error"] = 'Invalid credentials';
+    $_SESSION["Login.Error"] = 'Invalid Credentials';
     header('Location: login.php');
 }
 ?>    
