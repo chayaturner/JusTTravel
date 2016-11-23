@@ -24,7 +24,6 @@ and <a href="addActivity.php">create</a> new activities.<br><br>
 Where are you off to next? <br>
 
 <?php include "slideshow.php"; ?>
-<br><br><br><br><br><br><br><br><br><br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </P>
 

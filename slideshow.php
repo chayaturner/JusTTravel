@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Slideshow</title>
+        <title>Just Travel</title>
     </head>
     <body>
         
