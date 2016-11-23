@@ -22,7 +22,9 @@
             }
             ?>
             <P id="slogan"> "Plan less. Travel more." </P>
-                <?php include "menu.php"; ?>
+                <?php include "animatedMenu.php"; ?>
+                <!-- <?php include "menu.php"; ?> -->
+                
         </div>
         <HR />
 
