@@ -97,20 +97,20 @@ nav ul li ul li a:hover {
 
 <nav class='animated flipInX'>
   <ul>
-    <li> <a href='#'>
+    <li> <a href='index.php'>
       <div class='fa fa-home'></div>
       </a> </li>
     <li class='sub-menu'> <a href='#'> Activities <i class='fa fa-angle-down'></i> </a>
       <ul>
-        <li> <a href='#'> Activities </a> </li>
-        <li> <a href='#'> Add Activities </a> </li>
-        <li> <a href='#'> My Activities </a> </li>
+        <li> <a href='searchActivities.php'> Activities </a> </li>
+        <li> <a href='addActivity.php'> Add Activities </a> </li>
+        <li> <a href='myActivities.php'> My Activities </a> </li>
       </ul>
     </li>
     <li class='sub-menu'> <a href='#'> More <i class='fa fa-angle-down'></i> </a>
       <ul>
-        <li> <a href='#'> About Us </a> </li>
-        <li> <a href='#'> Contact Us </a> </li>
+        <li> <a href='aboutUs.php'> About Us </a> </li>
+        <li> <a href='contactus.php'> Contact Us </a> </li>
       </ul>
     </li>
   </ul>
