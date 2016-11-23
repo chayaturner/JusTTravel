@@ -39,6 +39,7 @@ $row = mysql_fetch_row($dbresult);
 if ($num_rows == 1) {
     //cookie that stores the username who logged in
     setcookie('user', $row[1]);
+    setcookie('email', $row[0]);
     //set the session variable to true
     $_SESSION['LoggedIn'] = TRUE;
     header('Location: myActivities.php');

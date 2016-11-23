@@ -148,7 +148,7 @@ input:required:valid {
 }
 
 .list{
-    background-color:#FFFFCC;
+    background-color:#F0F8FF;
     border-width:  0px 0px 6px 0px;
     border-style: solid;
     border-color:  white;
@@ -263,6 +263,18 @@ input:required:valid {
 
 .hide{
     display: none;
+}
+
+.addsubbutton{
+    background-color: #006666;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    float:right;
+    font-size: 12px;
+    border-radius: 50%;
 }
 
 

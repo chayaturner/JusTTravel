@@ -6,13 +6,6 @@ require_once "dbConnect.php";
 
 <script>
     $(function () {
-
-        $.validator.addMethod('notused', function (value) {
-            //Your Validation Here
-
-            return isValid; // return bool here if valid or not.
-        }, 'Your error message!');
-
         $("#createAccount").validate({
             rules: {
                 firstName: {
@@ -34,8 +27,8 @@ require_once "dbConnect.php";
                 },
                 email: {
                     required: true,
-                    email: true,
-                    notused: true
+                    email: true
+
                 },
                 password: {
                     required: true
