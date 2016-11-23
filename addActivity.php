@@ -5,7 +5,7 @@ require_once "dbConnect.php";
 
 
 <script>
-    $(document).ready(function () {
+  $(function () {
         $("#addActivity").validate({
             rules: {
                 email: "required",
