@@ -7,90 +7,91 @@
 <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" type="text/css">
 <style class="cp-pen-styles">
 body {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: "Roboto";
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  font-family: "Roboto" !important;
+  font-size: 14px !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
 }
 
 nav {
-  width:500px;
-  margin: 30px auto;
+  width:500px!important;
+  margin: 30px auto !important;
 }
 
 nav ul {
-  background: #2ecc71;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  background: #2ecc71 !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 nav ul li {
-  position: relative;
-  display: inline-block;
-  margin-right: -4px;
-  text-align: center;
+  position: relative !important;
+  display: inline-block !important;
+  margin-right: -4px !important;
+  text-align: center !important;
 }
 
 nav ul li:first-child a {
-  background: #27ae60;
-  width: 49px;
-  padding: 15px 0;
+  background: #27ae60 !important;
+  width: 49px !important;
+  padding: 15px 0 !important;
 }
 
-nav ul li:last-child { margin: 0; }
+nav ul li:last-child { margin: 0 !important; }
 
 nav ul li a {
-  display: block;
-  background: #2ecc71;
-  padding: 15px 20px;
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  transition: 0.2s linear;
+  display: block !important;
+  background: #2ecc71 !important;
+  padding: 15px 20px !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+  transition: 0.2s linear !important;
 }
 
-nav ul li a:hover { background: #27ae60; }
+nav ul li a:hover { background: #27ae60 !important; }
 
 nav ul li ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 240px;
-  border-bottom: 4px solid #2ecc71;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 240px !important;
+  border-bottom: 4px solid #2ecc71 !important;
 }
 
 nav ul li ul li {
-  display: block;
-  width: 100%;
-  margin: 0;
-  text-align: left;
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  text-align: left !important;
 }
 
 nav ul li ul li a {
-  display: block;
-  background: #2c3e50;
-  padding: 10px 15px;
+  display: block !important;
+  background: #2c3e50 !important;
+  padding: 10px 15px !important;
 }
 
 nav ul li ul li a:first-child {
-  background: #2c3e50;
-  width: auto;
-  border-left: 4px solid transparent;
-  padding: 10px 15px;
-  font-size: 14px;
+  background: #2c3e50 !important;
+  width: auto !important;
+  border-left: 4px solid transparent !important;
+  padding: 10px 15px !important;
+  font-size: 14px !important;
 }
 
 nav ul li ul li a:hover {
-  background: #34495e;
-  border-left: 4px solid #2ecc71;
+  background: #34495e !important;
+  border-left: 4px solid #2ecc71 !important;
 }
 </style>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="animatedMenuStyles.css" type="text/css" />
 </head>
 
 <body>
