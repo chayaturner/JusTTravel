@@ -10,9 +10,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  font-family: "Roboto";
-  font-size: 15px;
   background-size: cover;
+  font-family: "Roboto";
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,13 +34,11 @@ nav ul li {
   display: inline-block;
   margin-right: -4px;
   text-align: center;
-  padding: 10px 0;
-  height: 25px;
 }
 
 nav ul li:first-child a {
+  background: #27ae60;
   width: 49px;
-  height: 23px;
   padding: 15px 0;
 }
 
@@ -55,6 +53,8 @@ nav ul li a {
   text-decoration: none;
   transition: 0.2s linear;
 }
+
+nav ul li a:hover { background: #27ae60; }
 
 nav ul li ul {
   position: absolute;
@@ -97,7 +97,7 @@ nav ul li ul li a:hover {
 
 <nav class='animated flipInX'>
   <ul>
-    <li> <a href='index.php'>
+      <li> <a href='index.php'>
       <div class='fa fa-home'></div>
       </a> </li>
     <li class='sub-menu'> <a href='#'> Activities <i class='fa fa-angle-down'></i> </a>
