@@ -17,13 +17,13 @@ body {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
-nav {
-  width:500px!important;
-  margin: 30px auto !important;
+nav{
+    position: absolute !important; 
+    margin: 30px auto !important;
 }
 
 nav ul {
-  background: #2ecc71 !important;
+  background: #006666 !important;
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li:first-child a {
-  background: #27ae60 !important;
+  background: #006666 !important;
   width: 49px !important;
   padding: 15px 0 !important;
 }
@@ -46,7 +46,7 @@ nav ul li:last-child { margin: 0 !important; }
 
 nav ul li a {
   display: block !important;
-  background: #2ecc71 !important;
+  background: #006666 !important;
   padding: 15px 20px !important;
   color: #fff !important;
   font-size: 14px !important;
@@ -61,7 +61,7 @@ nav ul li ul {
   top: 100% !important;
   left: 0 !important;
   width: 240px !important;
-  border-bottom: 4px solid #2ecc71 !important;
+  border-bottom: 4px solid #006666 !important;
 }
 
 nav ul li ul li {
@@ -87,7 +87,7 @@ nav ul li ul li a:first-child {
 
 nav ul li ul li a:hover {
   background: #34495e !important;
-  border-left: 4px solid #2ecc71 !important;
+  border-left: 4px solid #006666 !important;
 }
 </style>
 <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
@@ -106,6 +106,12 @@ nav ul li ul li a:hover {
         <li> <a href='searchActivities.php'> Activities </a> </li>
         <li> <a href='addActivity.php'> Add Activities </a> </li>
         <li> <a href='myActivities.php'> My Activities </a> </li>
+      </ul>
+    </li>
+    <li class='sub-menu'> <a href='#'> Account <i class='fa fa-angle-down'></i> </a>
+      <ul>
+        <li> <a href='login.php'> Log In </a> </li>
+        <li> <a href='signup.php'> Sign Up </a> </li>
       </ul>
     </li>
     <li class='sub-menu'> <a href='#'> More <i class='fa fa-angle-down'></i> </a>
