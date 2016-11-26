@@ -97,5 +97,5 @@ require_once "dbConnect.php";
     <input type="submit" id="button" value="Add Activity"/>
 </form>
 
-<?php include "footer.php"; ?>
+<?php include "footer.php"; 
 
