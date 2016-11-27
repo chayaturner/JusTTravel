@@ -3,10 +3,12 @@
 <HTML>
     <HEAD>
         <LINK rel="stylesheet" href="styles.css" type="text/css" />
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
-    </HEAD>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script> </HEAD>
     <BODY>
 
         <DIV class="image">
@@ -22,10 +24,11 @@
             }
             ?>
             <P id="slogan"> "Plan less. Travel more." </P>
-                <?php include "animatedMenu.php";
-                //include "menu.php"
+                <?php
+                include "menu.php";
+                //include "animatedMenu.php";
                 ?>
-           
+
 
         </div>
         <HR />

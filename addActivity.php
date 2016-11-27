@@ -5,14 +5,16 @@ require_once "dbConnect.php";
 
 
 <script>
-  $(function () {
+    $(document).ready(function () {
+
         $("#addActivity").validate({
             rules: {
-                email: "required",
-                street: "required",
-                coName: {
+                email: {
                     required: true,
-                    minlength: 3
+                    email: true
+                },
+                newActivity: {
+                    required: true
                 },
                 description: {
                     required: true,
@@ -24,14 +26,41 @@ require_once "dbConnect.php";
                     maxlength: 15
                 },
                 phone: {
-                    required: true,
-                    length: 10
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 10,
+                    required: true
+
                 },
                 zip: {
+                    digits: true,
+                    minlength: 5,
+                    maxlength: 5,
+                    required: true
+                },
+                coname: {
                     required: true,
-                    length: 5
+                    minlength: 3
+                },
+                street: {
+                    required: true,
+                    minlength: 4
+
+                },
+                city: {
+                    required: true,
+                    minlength: 4
                 }
             }
+        });
+
+        var type = jQuery('#activityType');
+        var select = this.value;
+        type.change(function () {
+            if ($(this).val() === 'Add') {
+                $('#addnew').show();
+            } else
+                $('#addnew').hide(); // hide div if value is not "custom"
         });
     });
 </script>
@@ -47,19 +76,21 @@ require_once "dbConnect.php";
     $dbquery = 'select activitytypeid,activitytypename from activitytype';
     $dbresult = mysql_query($dbquery, $dbhandle);
     echo ' <label>Activity Type:</label> <select name = "activityType" id="activityType">';
-    //echo '<option value="Add" SELECTED>Add New</option>';
+    echo '<option value="Add" SELECTED>Add New</option>';
     while ($dbrow = mysql_fetch_assoc($dbresult)) {
         echo sprintf("<option value=%f>%s</option>", $dbrow['activitytypeid'], $dbrow['activitytypename']);
     }
     echo '</select>';
     ?>
     <br>
-    <!--<div id="addnew">
-        <label>Or add new Activity:</label> 
-        <input type = "TEXT" name = "newActivity" id ="newActivity" size = "30"<br><br>
-    </div>-->
+
+    <div id="addnew">
+        <label>***</label> 
+        <input type = "TEXT" name = "newActivity" id ="newActivity" placeholder="New Activity Type">
+    </div>
+
     <label>Company Name:</label> 
-    <input type ="TEXT" name="coName" id="coName" size="30"><br>
+    <input type ="TEXT" name="coname" id="coname"><br>
     <label>Description:</label> 
     <input type ="TEXT" name="description" id="description"><br>
     <label>Rating:</label> 
@@ -71,31 +102,31 @@ require_once "dbConnect.php";
         <option value="5">5</option>
     </select><br>
     <label>Contact Name:</label>   
-    <input type ="TEXT" name="contact" id="contact" size="30"><br>
+    <input type ="TEXT" name="contact" id="contact" ><br>
     <label>Phone Number:</label>   
-    <input type ="TEXT" name="phone" id="phone" size="30"><br>
+    <input type ="text" name="phone" id="phone" placeholder="0000000000 (#s only)"><br>
     <label>Email:</label>  
-    <input type ="email" name="email" id="email" size="30"><br>
+    <input type ="email" name="email" id="email" placeholder="someone@example.org"><br>
     <label>Other Contact Info/Note:</label>   
-    <textarea name="other" id="other" form="addConfirmation" rows="2"></textarea><br>
+    <textarea name="other" id="other" form="addActivity" rows="2"></textarea><br>
     <label>Street:</label>  
-    <input type ="TEXT" name="street" id="street" size="30"><br>
+    <input type ="TEXT" name="street" id="street" ><br>
     <label>City:</label>  
-    <input type ="TEXT" name="city" id="city" size="30"><br>
+    <input type ="TEXT" name="city" id="city" ><br>
     <?php
     $dbquery = 'select statename,locationid  from location';
     $dbresult = mysql_query($dbquery, $dbhandle);
     echo ' <label>Location:</label> <select name = "locations" id="locations">';
-    echo '<option value="None" SELECTED> None</option>';
     while ($dbrow = mysql_fetch_assoc($dbresult)) {
         echo sprintf("<option value=%s>%s</option>", $dbrow['locationid'], $dbrow['statename']);
     }
     echo '</select><br>';
     ?>
     <label>Zip:</label>  
-    <input type ="TEXT" name="zip" id="zip" size="30"><br><br>
+    <input type ="text" name="zip" id="zip" placeholder="00000 (#s only)"><br><br>
     <input type="submit" id="button" value="Add Activity"/>
 </form>
 
-<?php include "footer.php"; 
+<?php
+include "footer.php";
 
