@@ -30,6 +30,7 @@ $dbquery = sprintf("insert into user (password,firstname,lastname,email,location
 $dbresult = mysql_query($dbquery, $dbhandle);
 if ($dbresult) {
     setcookie('user', $first);
+    setcookie('email', $email);
 //set the session variable to true
     $_SESSION['LoggedIn'] = TRUE;
     header('Location: myActivities.php');

@@ -68,7 +68,7 @@ if (isset($_SESSION['Login.Error'])) {
     //crete query and rules to validate that user and email dont exist
     $dbquery = 'select statename, locationid from location';
     $dbresult = mysql_query($dbquery, $dbhandle);
-    echo ' <label> Location:</label> <select name = "locations" id="locations">';
+    echo ' <label>State:</label> <select name = "locations" id="locations">';
     while ($dbrow = mysql_fetch_assoc($dbresult)) {
         echo sprintf("<option value=%f>%s</option>", $dbrow['locationid'], $dbrow['statename']);
     }

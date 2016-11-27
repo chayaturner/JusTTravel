@@ -103,7 +103,7 @@
                 <li class='sub-menu'> <a href='#'> Activities <i class='fa fa-angle-down'></i> </a>
                     <ul>
                         <li> <a href='searchActivities.php'> Activities </a> </li>
-                        <li> <a href='addActivity.php'> Add Activities </a> </li>
+                        <li> <a href='addActivity.php'> Create Activities </a> </li>
                         <li> <a href='myActivities.php'> My Activities </a> </li>
                     </ul>
                 </li>
