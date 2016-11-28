@@ -3,8 +3,7 @@
 include "header.php";
 require_once 'dbConnect.php';
 
-
-
+echo '<p>Your Activity List</p>';
 if ((isset($_SESSION['LoggedIn'])) && ($_SESSION['LoggedIn'] == TRUE)) {
 
     if (isset($_SESSION['Add.Message'])) {
