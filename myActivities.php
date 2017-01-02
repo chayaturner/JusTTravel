@@ -29,7 +29,7 @@ if ((isset($_SESSION['LoggedIn'])) && ($_SESSION['LoggedIn'] == TRUE)) {
                 echo '<input type="hidden" name="activityid" value="' . $dbrow['activityid'] . '">';
                 echo '<input type="submit" class="addsubbutton" value="-" id="button"/>';
                 echo '</form>';
-                echo '<a href="activity.php">' . $dbrow['activityname'];
+                echo '<a href="activity.php?id=' . $dbrow['activityid'] . '">' . $dbrow['activityname'];
                 echo '</a><br>' . $dbrow['description'] . '<br>' . $dbrow['statename'] . '<br>';
                 echo '</div>';
             }

@@ -34,10 +34,23 @@ $activitycontactid = mysql_insert_id();
 $dbquery = sprintf("insert into activity(ActivityName, Description, ActivityTypeID, Rating, ActivityContactID, LocationID) values( '%s', '%s', '%f','%f', '%f','%f')", $name, $description, $type, $rating, $activitycontactid, $location);
 $dbresult = mysql_query($dbquery, $dbhandle);
 
+$dbquery = sprintf('select activitytypename from activitytype where activitytypeid = %f', $type);
+$dbresult = mysql_query($dbquery, $dbhandle);
+$num_rows = mysql_num_rows($dbresult);
+$row = mysql_fetch_row($dbresult);
+$activitytypename = $row[0];
+
+$dbquery = sprintf($dbquery = 'select statename from location where locationid = %f', $location);
+$dbresult = mysql_query($dbquery, $dbhandle);
+$num_rows = mysql_num_rows($dbresult);
+$row = mysql_fetch_row($dbresult);
+$locationname = $row[0];
+
 
 if ($dbresult) {
-    echo '<p>Activity Succesfully Added!!</p>';
-    echo 'Activity Type: ' . $type;
+    echo '<div class="list" id="activitydetails">';
+    echo '<h1>Activity Succesfully Added!!</h1>';
+    echo '<p>Activity Type: ' . $activitytypename;
     echo '<br>Name: ' . $name;
     echo '<br>Description: ' . $description;
     echo '<br>Rating: ' . $rating;
@@ -47,11 +60,11 @@ if ($dbresult) {
     echo '<br>Other Info: ' . $other;
     echo '<br>Street: ' . $street;
     echo '<br>City: ' . $city;
-    echo '<br>State: ' . $location;
-    echo '<br>Zip: ' . $zip;
+    echo '<br>State: ' . $locationname;
+    echo '<br>Zip: ' . $zip . '</p>';
+    echo '</div>';
 } else {
     echo ' change status Error ID: ' . mysql_errno() . 'occured while processing your request. Please try again. If the error persists, <a href = "contactus.php">Contact Us!</a>';
 }
 
 include 'footer.php';
-

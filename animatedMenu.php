@@ -100,6 +100,7 @@
                 <ul>
                     <li> <a href='aboutUs.php'> About Us </a> </li>
                     <li> <a href='contactus.php'> Contact Us </a> </li>
+                    <li> <a href='admin.php'> Admin </a> </li>
                 </ul>
             </li>
         </ul>

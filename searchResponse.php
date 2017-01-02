@@ -31,7 +31,7 @@ while ($dbrow = mysql_fetch_assoc($dbresult)) {
     echo '<input type="hidden" name="activityid" value="' . $dbrow['activityid'] . '">';
     echo '<input type="submit" class="addsubbutton" value="+" id="button"/>';
     echo '</form>';
-    echo '<a href="activity.php">' . $dbrow['activityname'];
+    echo '<a href="activity.php?id='. $dbrow['activityid'] . '">' . $dbrow['activityname'];
     echo '</a><br>' . $dbrow['description'] . '<br>' . $dbrow['statename'] . '<br>';
     echo '</div>';
     //need to carry data about activity into actiicty page to display full activity 
@@ -39,5 +39,4 @@ while ($dbrow = mysql_fetch_assoc($dbresult)) {
 }
 include "footer.php";
 ?>
-
 
